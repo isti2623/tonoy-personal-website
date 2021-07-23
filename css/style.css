@@ -1,0 +1,106 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/* NavBar Section */
+.navbar-brand img{
+    height: 50px;
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.nav-item:hover{
+text-decoration: underline;
+text-decoration-thickness: 3px;
+}
+
+/* header */
+header{
+    background-image: url(../image/header-bg.png);
+    background-repeat: no-repeat;
+}
+.header-part{
+    margin-top: 250px;
+    margin-bottom: 250px;
+    
+}
+.header-h3{
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.header-h1{
+    color: #f78c6b;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/*Start Animate Part */
+.animate-text{
+    position: relative;
+    color:  #f78c6b;
+    -webkit-text-stroke: 0.3vw#f7f9fe;
+    text-transform: uppercase;
+}
+.animate-text::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color:  #f78c6b;
+    -webkit-text-stroke: 0vw#f7f9fe;
+    border-right: 2px solid  #f78c6b;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0%;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+
+/*About Section Part */
+
+.section-h1{
+   color: #ff3d8a;
+   font-size: 60px;
+    font-weight: 700;
+}
+.bg-about{
+    background-image: url(../image/latest-work-bg.png);
+    background-repeat: no-repeat;
+}
+
+/* Skill Section */
+
+.skill-part{
+    margin-top: 100px;
+    margin-bottom: 200px;
+    
+    
+}
+
+.bg-skill{
+    background-image: url(../image/biography-bg.png);
+    background-repeat: no-repeat;
+}
+
+/* Portfolio Section */
+
+
+
+/* Order Section */
+
+
+.bg-order{
+    background-image: url(../image/footer-bg.png);
+    background-repeat: no-repeat;
+}
